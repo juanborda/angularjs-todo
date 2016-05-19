@@ -108,8 +108,8 @@ module.exports = {
             replacement: process.env.API_URL + '/'
         },
         {
-            match: 'URL',
-            replacement: process.env.URL + '/'
+            match: 'APP_URL',
+            replacement: process.env.APP_URL + '/'
         }
     ]
 };
