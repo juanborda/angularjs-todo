@@ -76,10 +76,12 @@ angular.module('app.todos', ['ui.router', 'app.confirmation-popup'])
             };
             
             $scope.complete = function (todo) {
+                todo.completed = !todo.completed;
+
                 TodoService.save(todo.id, {completed: todo.completed}).then(function (res) {
-                    todo.completed = !todo.completed;
                     Notification.success('Todo status updated!');
                 }, function (err) {
+                    todo.completed = !todo.completed;
                     Notification.error('Todo status update failed!');
                 });
             };
