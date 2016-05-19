@@ -1,0 +1,69 @@
+{
+  "name": "TodoAngularJS",
+  "version": "1.0.0",
+  "description": "TodoAngularJS",
+  "author": "Juan Borda",
+  "url": null,
+  "keywords": [
+  ],
+  "license": "http://www.binpress.com/license/view/l/1351f3e0da847fcbc20d4f20ac115d63",
+  "contributors": [
+    {
+      "name": "Juan Borda",
+      "email": "juampiib@gmail.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/juanpborda/angularjs-todo.git"
+  },
+  "private": true,
+  "dependencies": {
+    "del": "^1.2.0",
+    "dotenv": "^1.2.0",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-bump": "^1.0.0",
+    "gulp-cache": "^0.1.3",
+    "gulp-flatten": "^0.0.4",
+    "gulp-footer": "^1.0.5",
+    "gulp-header": "1.2.2",
+    "gulp-html2js": "^0.1.0",
+    "gulp-htmlmin": "^0.1.2",
+    "gulp-imagemin": "^0.5.0",
+    "gulp-jshint": "^1.11.5",
+    "gulp-livereload": "^3.8.0",
+    "gulp-markdown": "^1.0.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-svgmin": "^1.1.2",
+    "gulp-svgstore": "^5.0.2",
+    "gulp-tap": "^0.1.3",
+    "gulp-template": "*",
+    "gulp-uglify": "^0.2.1",
+    "gulp-watch": "^4.2.4",
+    "gulp-wrap": "^0.3.0",
+    "imagemin": "^4.0.0",
+    "imagemin-gifsicle": "^4.2.0",
+    "imagemin-optipng": "^4.3.0",
+    "jshint-stylish": "^2.0.1",
+    "lazypipe": "^0.2.4"
+  },
+  "devDependencies": {
+    "gulp-concat": "^2.6.0",
+    "gulp-cssnano": "^2.1.0",
+    "gulp-debug": "^2.1.2",
+    "gulp-if": "^2.0.0",
+    "gulp-inject": "^3.0.0",
+    "gulp-inject-string": "^1.0.0",
+    "gulp-jsbeautifier": "^1.0.1",
+    "gulp-less": "^3.0.5",
+    "gulp-ng-annotate": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace-task": "^0.11.0",
+    "gulp-util": "^3.0.7",
+    "less-plugin-autoprefix": "^1.5.1",
+    "less-plugin-clean-css": "^1.5.1",
+    "run-sequence": "^1.1.5"
+  }
+}

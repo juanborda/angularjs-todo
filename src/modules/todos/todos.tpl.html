@@ -1,0 +1,42 @@
+<div data-ng-include="'modules/shared/header-general/header-general.tpl.html'"></div>
+
+<div id="content">
+    <div class="container">
+        <h1>Todos</h1>
+
+        <form name="todosForm">
+            <div class="col-sm-10">
+                <div class="form-group">
+                    <input autofocus alphanum-only required data-ng-model="todo.title" class="form-control" type="text" name="todo"/>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="form-group">
+                    <button data-ng-click="add()" class="btn btn-primary btn-block">Save</button>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </form>
+
+        <div class="col-md-12">
+            <div class="todos">
+                <ul class="list-group">
+                    <li class="list-group-item" data-ng-click="complete(todo)" data-ng-repeat="todo in todos"
+                        data-ng-class="{'list-group-item-success':todo.completed, 'list-group-item-warning':!todo.completed}">
+                        {{todo.title | trim }}
+                        <!--<span class="pull-right"><button type="button" class="btn btn-sm btn-danger"
+                                                         data-ng-click="remove(todo, $index)"><i
+                                class="fa fa-remove"></i></button></span>-->
+                        <span class="pull-right"><button class="btn btn-sm btn-primary"
+                                                         data-ng-click="edit($event, todo, $index)"><i
+                                class="fa fa-edit"></i></button></span>
+                        <span class="pull-right"><confirmation btn-class="btn-danger" on-confirm="remove(todo, $index)"></confirmation></span>
+                        <div class="clearfix"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div data-ng-include="'modules/shared/footer/footer.tpl.html'"></div>
