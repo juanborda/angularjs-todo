@@ -57,6 +57,7 @@ angular.module('app.todos', ['ui.router', 'app.confirmation-popup'])
                     TodoService.create($scope.todo).then(function (data) {
                         //$scope.todos.push(data);
                         $scope.todos.unshift(data);
+                        $scope.todo.title = '';
                         Notification.success('Todo created successfully');
                     }, function (err) {
                         Notification.error('Todo creation failed.');

@@ -21,16 +21,13 @@
         <div class="col-md-12">
             <div class="todos">
                 <ul class="list-group">
-                    <li class="list-group-item" data-ng-click="complete(todo)" data-ng-repeat="todo in todos"
+                    <li class="list-group-item" data-ng-click="complete(todo)" data-ng-repeat="todo in todos track by todo.id"
                         data-ng-class="{'list-group-item-success':todo.completed, 'list-group-item-warning':!todo.completed}">
                         {{todo.title | trim }}
-                        <!--<span class="pull-right"><button type="button" class="btn btn-sm btn-danger"
-                                                         data-ng-click="remove(todo, $index)"><i
-                                class="fa fa-remove"></i></button></span>-->
+                        <span class="pull-right"><confirmation btn-class="btn-danger" on-confirm="remove(todo, $index)"></confirmation></span>
                         <span class="pull-right"><button class="btn btn-sm btn-primary"
                                                          data-ng-click="edit($event, todo, $index)"><i
                                 class="fa fa-edit"></i></button></span>
-                        <span class="pull-right"><confirmation btn-class="btn-danger" on-confirm="remove(todo, $index)"></confirmation></span>
                         <div class="clearfix"></div>
                     </li>
                 </ul>
